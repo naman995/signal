@@ -1,6 +1,8 @@
 import React from "react";
 import logo from "./../../assets/img/logo.png";
 import signInImage from "./../../assets/img/sign_in_img.png";
+import InputField from "./../../components/inputField";
+import BottomButton from "../../components/bottomButton";
 const SignIn = () => {
   return (
     <section className="bg-custom-color-4 w-full min-h-screen h-auto flex items-center pt-12 pb-12">
@@ -30,12 +32,7 @@ const SignIn = () => {
               </p>
               <div class="w-[75%] m-auto ">
                 <form action="dashboard.html" className="mt-5">
-                  <input
-                    className="m-auto text-xl block w-full text-white mb-6 bg-custom-color-5 pt-4 pr-4 rounded-xl border-0  placeholder:text-custom-color-7 placeholder:text-base font-normal tracking-wide
-                    focus:outline-none pl-4   focus:border-transparent pb-5 "
-                    type="text"
-                    placeholder="Testuser1@gmail.com"
-                  />
+                    <InputField type="email" placeholder="Email" text="testuser@gmail.com" />
                   <input
                     className="m-auto text-xl block w-full text-white  bg-custom-color-5 pt-4 pr-4 rounded-xl border-0 placeholder:text-custom-color-7 placeholder:text-base font-normal tracking-wide
                      focus:outline-none pl-4 focus:border-transparent pb-5"
@@ -50,11 +47,7 @@ const SignIn = () => {
                       Forgot Password?
                     </a>
                   </div>
-                  <input
-                    type="submit"
-                    value="Log in"
-                    class="bg-custom-color-1 w-full rounded-lg py-6 text-xl text-black font-bold hover:bg-custom-color-2 "
-                  />
+                    <BottomButton text="Log In" />
                 </form>
                 <p class="text-xl font-normal text-center pt-1 leading-6 text-white mt-4">
                   Don’t Have an Account ?
@@ -71,6 +64,7 @@ const SignIn = () => {
           </div>
         </div>
       </div>
+      
     </section>
   );
 };
