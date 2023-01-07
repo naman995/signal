@@ -3,9 +3,11 @@ import logo from "./../../assets/img/logo.png";
 import signInImage from "./../../assets/img/sign_in_img.png";
 import InputField from "./../../components/inputField";
 import BottomButton from "../../components/bottomButton";
-import DatePicker from "../../components/datePicker";
-import ProgressBar from "../../components/progressBar";
-const SignUp = () => {
+import ProgressBar2 from "../../components/progressBar2";
+import CityDropdown from "../../components/dropdowns/cityDropdown";
+import StateDropdown from "../../components/dropdowns/stateDropdown";
+
+const SignUp2 = () => {
   return (
     <section className="bg-custom-color-4 w-full min-h-screen h-auto flex items-center pt-12 pb-12">
       <div class="container mx-auto sm:px-4">
@@ -34,12 +36,12 @@ const SignUp = () => {
               </p>
               <div class="w-[75%] m-auto ">
                 <div className="my-12">
-                  <ProgressBar progress={50} />
+                  <ProgressBar2 progress={100} />
                 </div>
                 <form action="dashboard.html" className="mt-5">
                   <div className="flex flex-row  space-x-8">
-                    <InputField type="text" text="First Name" />
-                    <InputField type="text" text="Last Name" />
+                   <CityDropdown />
+                    <StateDropdown/>
                   </div>
                   {/* <input
                     className="m-auto text-xl block w-full text-white  bg-custom-color-5 pt-4 pr-4 rounded-xl border-0 placeholder:text-custom-color-7 placeholder:text-base font-normal tracking-wide
@@ -47,10 +49,10 @@ const SignUp = () => {
                     type="text"
                     placeholder="Email"
                   /> */}
-                  <InputField type="text" text="Email" />
-                  <InputField type="date" text="" />
+                  <InputField type="Password" text="***************" />
+                  <InputField type="text" text="Testuser@gmail.com" />
 
-                  <BottomButton text="Next" />
+                  <BottomButton text="Sign Up" />
                 </form>
                 <p class="text-xl font-normal text-center pt-1 leading-6 text-white mt-4">
                   Already have an account?{"  "}
@@ -71,4 +73,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default SignUp2;
