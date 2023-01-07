@@ -16,7 +16,7 @@ const SignIn = () => {
               </div>
               <div class="m-auto w-[400px]">
                 <img
-                  class="max-w-full h-auto m-auto text-center flex items-center justify-center"
+                  class="max-w-full h-auto m-auto text-center flex items-center justify-center animate-bounce-slow"
                   src={signInImage}
                   alt=""
                 />
@@ -33,7 +33,11 @@ const SignIn = () => {
               </p>
               <div class="w-[75%] m-auto ">
                 <form action="dashboard.html" className="mt-5">
-                    <InputField type="email" placeholder="Email" text="testuser@gmail.com" />
+                  <InputField
+                    type="email"
+                    placeholder="Email"
+                    text="testuser@gmail.com"
+                  />
                   <input
                     className="m-auto text-xl block w-full text-white  bg-custom-color-5 pt-4 pr-4 rounded-xl border-0 placeholder:text-custom-color-7 placeholder:text-base font-normal tracking-wide
                      focus:outline-none pl-4 focus:border-transparent pb-5"
@@ -45,12 +49,12 @@ const SignIn = () => {
                       href="forgot.html"
                       class=" text-custom-color-3  text-base  font-semibold tracking-normal no-underline hover:"
                     >
-                      <Link to='/forgetPassword'  >
-                      Forgot Password?
-                      </Link>
+                      <Link to="/forgetPassword">Forgot Password?</Link>
                     </a>
                   </div>
+                  <Link to="/dashBoard">
                     <BottomButton text="Log In" />
+                  </Link>
                 </form>
                 <p class="text-xl font-normal text-center pt-1 leading-6 text-white mt-4">
                   Don’t Have an Account ?
@@ -59,9 +63,12 @@ const SignIn = () => {
                     href="./sign_up.html"
                   >
                     {" "}
-                  < Link to="/sign_up" className="text-custom-color-6 no-underline">
-                    Sign up
-                  </Link>
+                    <Link
+                      to="/sign_up"
+                      className="text-custom-color-6 no-underline"
+                    >
+                      Sign up
+                    </Link>
                   </a>
                 </p>
               </div>
@@ -69,7 +76,6 @@ const SignIn = () => {
           </div>
         </div>
       </div>
-      
     </section>
   );
 };

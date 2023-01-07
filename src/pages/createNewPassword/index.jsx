@@ -42,7 +42,9 @@ const CreatePassword = () => {
                     <Link to="/">Login</Link>
                   </a>
                 </div>
-                <BottomButton text="Submit" />
+                <Link to="/dashboard">
+                  <BottomButton text="Submit" />
+                </Link>
                 <p class="text-xl font-normal text-center pt-1 leading-6 text-white mt-4">
                   Don’t Have an Account ? {"  "}
                   <a className="text-custom-color-6 no-underline">
