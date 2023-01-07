@@ -3,6 +3,7 @@ import logo from "./../../assets/img/logo.png";
 import signInImage from "./../../assets/img/sign_in_img.png";
 import InputField from "./../../components/inputField";
 import BottomButton from "../../components/bottomButton";
+import { Link } from "react-router-dom";
 const SignIn = () => {
   return (
     <section className="bg-custom-color-4 w-full min-h-screen h-auto flex items-center pt-12 pb-12">
@@ -44,7 +45,9 @@ const SignIn = () => {
                       href="forgot.html"
                       class=" text-custom-color-3  text-base  font-semibold tracking-normal no-underline hover:"
                     >
+                      <Link to='/forgetPassword'  >
                       Forgot Password?
+                      </Link>
                     </a>
                   </div>
                     <BottomButton text="Log In" />
@@ -56,7 +59,9 @@ const SignIn = () => {
                     href="./sign_up.html"
                   >
                     {" "}
+                  < Link to="/sign_up" className="text-custom-color-6 no-underline">
                     Sign up
+                  </Link>
                   </a>
                 </p>
               </div>

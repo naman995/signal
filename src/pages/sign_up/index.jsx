@@ -3,8 +3,8 @@ import logo from "./../../assets/img/logo.png";
 import signInImage from "./../../assets/img/sign_in_img.png";
 import InputField from "./../../components/inputField";
 import BottomButton from "../../components/bottomButton";
-import DatePicker from "../../components/datePicker";
 import ProgressBar from "../../components/progressBar";
+import { Link } from "react-router-dom";
 const SignUp = () => {
   return (
     <section className="bg-custom-color-4 w-full min-h-screen h-auto flex items-center pt-12 pb-12">
@@ -49,8 +49,9 @@ const SignUp = () => {
                   /> */}
                   <InputField type="text" text="Email" />
                   <InputField type="date" text="" />
-
-                  <BottomButton text="Next" />
+                  <Link to="/sign_up2">
+                    <BottomButton text="Next" />
+                  </Link>
                 </form>
                 <p class="text-xl font-normal text-center pt-1 leading-6 text-white mt-4">
                   Already have an account?{"  "}
@@ -59,7 +60,7 @@ const SignUp = () => {
                     href="./sign_up.html"
                   >
                     {" "}
-                    Sign In
+                    <Link to="/">Sign In</Link>
                   </a>
                 </p>
               </div>
