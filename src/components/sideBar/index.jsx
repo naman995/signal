@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../../assets/img/header_logo.png";
 import { AiOutlineHome } from "react-icons/ai";
 import { MdOutlineEventNote } from "react-icons/md";
+import { Link } from "react-router-dom";
 const Sidebar = () => {
   return (
     <aside className="h-full w-[280px] pt-5 lg:block hidden bg-custom-color-4">
@@ -15,7 +16,9 @@ const Sidebar = () => {
         </div>
         <div className="mt-6 flex flex-rows text-white items-center mx-5 text-2xl rounded-xl px-3 ">
           <MdOutlineEventNote className="text-white" />
+          <Link to="/plans">
           <p className="text-white ml-2 font-semibold"> Plans</p>
+          </Link>
         </div>
       </div>
     </aside>

@@ -12,6 +12,8 @@ module.exports = {
         "custom-color-6": "#9BEF05", //Sign up btn
         "custom-color-7": "#6D6D6D", //placeholder color
         "custom-color-8": " #4A4A4A", //placeholder color
+        "custom-color-9": " #363636", //Chat bg color
+        "custom-color-10": "#6D6D6D", //time text  color
       },
       animation: {
         "bounce-slow": "bounce 6s linear infinite",
