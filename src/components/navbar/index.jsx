@@ -5,10 +5,10 @@ import { AiFillCaretDown } from "react-icons/ai";
 const Navbar = () => {
   return (
     <div className="flex flex-row ml-10 mt-5">
-      <div className="flex  items-center w-full justify-between">
-        <div className="flex flex-row flex-1 items-center space-x-2 text-4xl text-white">
-          <RxHamburgerMenu className="mt-2 font-bold" />
-          <p>Dashboard</p>
+      <div className="flex flex-row items-center w-full justify-between">
+        <div className="flex flex-row items-center space-x-2 text-4xl text-white">
+          <RxHamburgerMenu className="font-bold" />
+          <p className="lg:text-[32px] text-[26px] font-semibold">Dashboard</p>
         </div>
         <div className="justify-items-center base-1/2  bg-custom-color-5 items-center rounded-3xl pl-6 pr-32 lg:flex hidden">
           <RxMagnifyingGlass
@@ -22,9 +22,12 @@ const Navbar = () => {
             placeholder="Search By Name"
           />
         </div>
-        <div className="flex flex-rows flex-1 h-10 w-24  aspect-auto justify-end">
+        <div className="lg:hidden flex flex-1 h-10 w-24 aspect-auto justify-center mt-4">
+          <RxMagnifyingGlass className="text-white font-bold" size={26} />
+        </div>
+        <div className="flex flex-rows h-10 w-30 justify-end">
           <img className="mr-2" src={profile} alt="" />
-          <p className="items-center text-white mt-2 mr-2 lg:block hidden">Hello Admin</p>
+          <p className="items-center text-white mt-2 mr-2">Hello Admin</p>
           <AiFillCaretDown className="text-white mt-3 mr-8" />
         </div>
       </div>

@@ -9,13 +9,11 @@ import DashBoard from "./pages/dashBoard";
 import Chat from "./pages/chat";
 import Plans from "./pages/plans";
 
-import "./App.css";
-
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-custom-color-5 min-h-screen">
       <Router>
         <Routes>
           <Route path="/" element={<SignIn />} />

@@ -5,21 +5,16 @@ import DisplayCards from "../../components/displayCards";
 
 const DashBoard = () => {
   return (
-    <div className="bg-custom-color-4 flex flex-row">
-        <div className="lg:w-[16%]">
-            <Sidebar/>
-        </div>
-        <div className="lg:w-[84%]">
-            <Navbar/>
-            <DisplayCards/>
-        </div>
+    <div className="flex flex-row h-screen">
+      <Sidebar />
+      <div className="w-full min-h-screen bg-custom-color-4 flex flex-col">
+        <Navbar />
+        <main className="h-full mt-4 pb-4">
+          <DisplayCards />
+        </main>
+      </div>
     </div>
-
   );
 };
-
- 
- 
- 
 
 export default DashBoard;
