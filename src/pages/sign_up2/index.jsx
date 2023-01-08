@@ -45,7 +45,7 @@ const SignUp2 = () => {
                     href="./sign_up.html"
                   >
                     {" "}
-                    <Link to="/sign_in">Sign In</Link>
+                    <Link to="/">Sign In</Link>
                   </a>
                 </p>
               </div>
