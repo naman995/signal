@@ -38,16 +38,19 @@ const CreatePassword = () => {
                   <InputField type="Password" text="Confirm Password" />
                 </form>
                 <div class="block text-right mb-7 -mt-5">
-                  <a class=" text-custom-color-3  text-base  font-semibold tracking-normal no-underline hover:">
+                  <div class=" text-custom-color-3  text-base  font-semibold tracking-normal no-underline hover:">
                     <Link to="/">Login</Link>
-                  </a>
+                  </div>
                 </div>
                 <Link to="/dashboard">
                   <BottomButton text="Submit" />
                 </Link>
                 <p class="text-xl font-normal text-center pt-1 leading-6 text-white mt-4">
                   Don’t Have an Account ? {"  "}
-                  <a className="text-custom-color-6 no-underline">
+                  <a
+                    className="text-custom-color-6 no-underline"
+                    href="./sign_up.html"
+                  >
                     {" "}
                     <Link to="/">Sign Up</Link>
                   </a>
