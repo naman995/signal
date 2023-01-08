@@ -10,7 +10,7 @@ const Navbar = () => {
           <RxHamburgerMenu className="mt-2 font-bold" />
           <p>Dashboard</p>
         </div>
-        <div className="flex-1  justify-items-center base-1/2 w-[100%] flex flex-row bg-custom-color-5 items-center rounded-3xl pl-6 pr-32">
+        <div className="justify-items-center base-1/2  bg-custom-color-5 items-center rounded-3xl pl-6 pr-32 lg:flex hidden">
           <RxMagnifyingGlass
             className="text-custom-color-7 font-bold"
             size={26}
@@ -24,7 +24,7 @@ const Navbar = () => {
         </div>
         <div className="flex flex-rows flex-1 h-10 w-24  aspect-auto justify-end">
           <img className="mr-2" src={profile} alt="" />
-          <p className="items-center text-white mt-2 mr-2">Hello Admin</p>
+          <p className="items-center text-white mt-2 mr-2 lg:block hidden">Hello Admin</p>
           <AiFillCaretDown className="text-white mt-3 mr-8" />
         </div>
       </div>

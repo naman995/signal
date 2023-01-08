@@ -6,10 +6,10 @@ import DisplayCards from "../../components/displayCards";
 const DashBoard = () => {
   return (
     <div className="bg-custom-color-4 flex flex-row">
-        <div className="w-[16%]">
+        <div className="lg:w-[16%]">
             <Sidebar/>
         </div>
-        <div className="w-[84%]">
+        <div className="lg:w-[84%]">
             <Navbar/>
             <DisplayCards/>
         </div>
