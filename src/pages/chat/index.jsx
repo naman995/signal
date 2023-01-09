@@ -59,8 +59,8 @@ const Chat = () => {
               type="text"
               placeholder="Type a message"
             />
-            <div className="text-center">
-              <p className="fixed bottom-0 text-[12px] left-1/2  text-center text-white">
+            <div className="flex text-center justify-center bg-custom-color-9">
+              <p className="fixed bottom-0 text-[12px] lg-1/2 lg:left-1/2  text-center text-white">
                 2022 copyright @signal spotter
               </p>
             </div>
