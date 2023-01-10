@@ -57,7 +57,7 @@ const Chat = () => {
           </div>
           <div className="relative">
             <input
-              className=" fixed lg:w-full w-full  lg: bottom-4 m-auto text-xl block  text-white  bg-custom-color-8 pt-4 pr-4  border-0  placeholder:text-custom-color-7 placeholder:text-base font-normal tracking-wide
+              className=" fixed lg:w-[83%] w-full   bottom-4 m-auto text-xl block  text-white  bg-custom-color-8 pt-4 pr-4  border-0  placeholder:text-custom-color-7 placeholder:text-base font-normal tracking-wide
                     focus:outline-none pl-4   focus:border-transparent pb-5 "
               type="text"
               placeholder="Type a message"
