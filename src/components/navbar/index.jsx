@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { RxHamburgerMenu, RxMagnifyingGlass } from "react-icons/rx";
 import profile from "../../assets/img/profile_img.png";
 import { AiFillCaretDown } from "react-icons/ai";
-import SideBar3 from "../sideBar3";
+ 
 import UserMenu from "../UserMenu";
 const Navbar = ({ sidebar: setIsSidebarOpen }) => {
   const [isOpen, setIsOpen] = useState(false);
