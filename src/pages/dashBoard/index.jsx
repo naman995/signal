@@ -4,11 +4,12 @@ import Navbar from "../../components/navbar";
 import DisplayCards from "../../components/displayCards";
 
 const DashBoard = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = React.useState(true);
   return (
-    <div className="flex flex-row h-screen">
-      <Sidebar />
+    <div className="flex lg:flex-row flex-col h-screen">
+      {isSidebarOpen && <Sidebar />}
       <div className="w-full min-h-screen bg-custom-color-4 flex flex-col">
-        <Navbar />
+        <Navbar sidebar={setIsSidebarOpen} />
         <main className="h-full mt-4 pb-4">
           <DisplayCards />
         </main>

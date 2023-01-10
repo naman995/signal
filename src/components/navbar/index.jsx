@@ -3,15 +3,18 @@ import { RxHamburgerMenu, RxMagnifyingGlass } from "react-icons/rx";
 import profile from "../../assets/img/profile_img.png";
 import { AiFillCaretDown } from "react-icons/ai";
 import SideBar3 from "../sideBar3";
-const Navbar = () => {
+import UserMenu from "../UserMenu";
+const Navbar = ({ sidebar: setIsSidebarOpen }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleSideBar = () => {
     setIsOpen(!isOpen);
+    setIsSidebarOpen(!isOpen);
   };
   return (
     <div className="flex flex-row ml-10 mt-5">
-      {isOpen && <SideBar3 />}
+      {/* {isOpen && <SideBar3 />} */}
       <div className="flex flex-row items-center w-full justify-between">
         <div className="flex flex-row items-center space-x-2 text-4xl text-white">
           <RxHamburgerMenu onClick={toggleSideBar} className="font-bold" />
@@ -32,11 +35,15 @@ const Navbar = () => {
         <div className="lg:hidden flex flex-1 h-10 w-24 aspect-auto justify-center mt-4">
           <RxMagnifyingGlass className="text-white font-bold" size={26} />
         </div>
-        <div className="flex flex-rows h-10 w-30 justify-end">
+        <div
+          className="flex flex-rows h-10 w-30 justify-end"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
           <img className="mr-2" src={profile} alt="" />
           <p className="items-center text-white mt-2 mr-2">Hello Admin</p>
           <AiFillCaretDown className="text-white mt-3 mr-8" />
         </div>
+        {isMenuOpen && <UserMenu />}
       </div>
     </div>
   );
