@@ -4,7 +4,6 @@ import profile from "../../assets/img/profile_img.png";
 import { AiFillCaretDown } from "react-icons/ai";
 import BoxImg from "../../assets/img/box_img.png";
 import UserMenu from "../UserMenu";
-// import SideBar3 from "../sideBar3";
 const Navbar2 = ({ sidebar: setIsSidebarOpen }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,7 +14,6 @@ const Navbar2 = ({ sidebar: setIsSidebarOpen }) => {
   };
   return (
     <div className="flex flex-row ml-10 mt-5">
-      {/* {isOpen && <SideBar3 />} */}
       <div className="flex flex-row items-center w-full justify-between">
         <div className="flex flex-row items-center space-x-2 text-4xl text-white">
           <RxHamburgerMenu onClick={toggleSideBar} className="font-bold" />
