@@ -1,5 +1,6 @@
 import React from "react";
-import Sidebar from "../../components/sideBar";
+ 
+import Sidebar4 from "../../components/sidebar4";
 import Navbar2 from "../../components/navbar2";
 import { RxMagnifyingGlass } from "react-icons/rx";
 
@@ -10,7 +11,7 @@ const Chat = () => {
    const [isSidebarOpen, setIsSidebarOpen] = React.useState(true);
   return (
     <div className="flex flex-row h-screen">
-      {isSidebarOpen && <Sidebar />}
+      {isSidebarOpen && <Sidebar4 />}
       <div className="w-full h-[98vh] bg-custom-color-4 flex flex-col">
         <Navbar2 sidebar={setIsSidebarOpen}/>
         <div className="bg-custom-color-5 lg:w-[98%] py-1 relative flex-grow rounded-3xl mt-5 lg:h-full overflow-y-auto scrollbar-rounded-xl  scrollbar-h-1/5 scrollbar-thin   scrollbar-thumb-custom-color-7 scrollbar-custom-color-9 ">
